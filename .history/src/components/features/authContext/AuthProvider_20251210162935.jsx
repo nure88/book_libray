@@ -36,7 +36,14 @@ return updateProfile(auth.currentUser, updateData)
    return signInWithPopup(auth, googleProvider);
   };
 
- 
+  const signInUser = (email, password) => {
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  const logOut = () => {
+    return signOut(auth);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {

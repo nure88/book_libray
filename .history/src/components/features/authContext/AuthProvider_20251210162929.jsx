@@ -32,11 +32,6 @@ const updateUser = (updateData) => {
 return updateProfile(auth.currentUser, updateData)
 };
 
-  const logInWithGoogle = () => {
-   return signInWithPopup(auth, googleProvider);
-  };
-
- 
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
