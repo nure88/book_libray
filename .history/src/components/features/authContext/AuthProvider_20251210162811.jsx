@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import AuthContext from "./AuthContext";
 import {
   createUserWithEmailAndPassword,
@@ -52,7 +52,7 @@ return updateProfile(auth.currentUser, updateData)
     logOut,
     
     updateUser,
-    user,
+    user, 
     setUser,
     loading,
   };
