@@ -1,4 +1,4 @@
-
+import React from 'react';
 import Container from '../../others/container/Container';
 import { useNavigate } from 'react-router';
 import toast, { Toaster } from 'react-hot-toast';
