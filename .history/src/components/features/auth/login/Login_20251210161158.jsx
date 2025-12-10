@@ -61,14 +61,14 @@ const handleToggle = () => {
          <fieldset className="fieldset flex flex-col justify-center items-center">
          <div className='flex flex-col justify-center items-start'>
           <label className="label">Email</label>
-           <input name='email' type="email" className="input w-md" placeholder="Please enter your Email here..." />
+           <input name='email' type="email" className="input w-md" placeholder=" Email" />
            {error && <p className='text-red-500 text-sm'>{error}</p>}
          </div>
          <div className='relative flex flex-col justify-center items-start'>
           <label className="label">Password</label>
          
       
-         <input name='password' type={toggle? "text":"password"} className="input w-md" placeholder="Please enter your Password here..." />
+         <input name='password' type={toggle? "text":"password"} className="input w-md" placeholder="Password" />
          <button className='absolute flex justify-center items-center ml-101 mt-4 cursor-pointer'onClick={handleToggle} type='button'>
           {
             toggle? <FaEye size={25}/>: <FaEyeSlash size={25}/>

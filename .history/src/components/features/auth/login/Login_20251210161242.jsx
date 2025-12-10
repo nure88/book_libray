@@ -68,7 +68,7 @@ const handleToggle = () => {
           <label className="label">Password</label>
          
       
-         <input name='password' type={toggle? "text":"password"} className="input w-md" placeholder="Please enter your Password here..." />
+         <input name='password' type={toggle? "text":"password"} className="input w-md" placeholder="Please enter your Password here" />
          <button className='absolute flex justify-center items-center ml-101 mt-4 cursor-pointer'onClick={handleToggle} type='button'>
           {
             toggle? <FaEye size={25}/>: <FaEyeSlash size={25}/>
