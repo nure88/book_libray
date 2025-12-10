@@ -110,7 +110,7 @@ fetch(`http://localhost:5000/books/${id}`,{
   <input name='coverImage' defaultValue={book?.coverImage} type="text" className="input" placeholder="Update book imgURL..." />
   {/* Update userEmail userEmail*/}
   <label className="label">Update User Email:</label>
-  <input defaultValue={book?.userEmail} name='userEmail' type="email" className="input" placeholder="Update userEmail..." />
+  <input defaultValue={book?.userEmail} name='userEmail' type="" className="input" placeholder="Update userEmail..." />
   <button className='btn btn-md mx-auto cursor-pointer link-btn' type="submit">Submit book</button>
 </fieldset>
 

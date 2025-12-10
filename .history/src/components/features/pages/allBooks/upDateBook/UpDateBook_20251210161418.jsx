@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Container from '../../../others/container/Container';
 import { useNavigate, useParams } from 'react-router';
 import Loading from '../../../others/loading/Loading';
@@ -70,12 +70,12 @@ fetch(`http://localhost:5000/books/${id}`,{
 })
 .then((res) => res.json())
 .then((data) => {
-//    console.log(data);
+   console.log(data);
    toast.success('book updated successfully!')
     navigate('/all-books');
 })
 .catch((error) => {
-    // console.log(error);
+    console.log(error);
      toast.error('Fail to added book');  
 })
 };
@@ -110,7 +110,7 @@ fetch(`http://localhost:5000/books/${id}`,{
   <input name='coverImage' defaultValue={book?.coverImage} type="text" className="input" placeholder="Update book imgURL..." />
   {/* Update userEmail userEmail*/}
   <label className="label">Update User Email:</label>
-  <input defaultValue={book?.userEmail} name='userEmail' type="email" className="input" placeholder="Update userEmail..." />
+  <input defaultValue={book?.userEmail} name='userEmail' type="text" className="input" placeholder="Update userEmail..." />
   <button className='btn btn-md mx-auto cursor-pointer link-btn' type="submit">Submit book</button>
 </fieldset>
 
