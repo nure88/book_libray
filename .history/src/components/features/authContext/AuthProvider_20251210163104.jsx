@@ -41,7 +41,9 @@ return updateProfile(auth.currentUser, updateData)
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  
+  const logOut = () => {
+    return signOut(auth);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
